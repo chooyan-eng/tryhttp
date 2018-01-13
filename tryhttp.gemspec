@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["chooyan-eng"]
   spec.email         = ["chooyan.enginner@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'TryHttp is a HTTP client / server gem, which supports to understand how HTTP works.'
+  spec.description   = 'TryHttp is a HTTP client / server gem, which supports to understand how HTTP works.'
+  spec.homepage      = 'https://github.com/chooyan-eng/tryhttp'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
