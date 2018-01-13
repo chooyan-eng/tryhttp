@@ -1,5 +1,5 @@
 require "tryhttp/version"
+require "tryhttp/printer"
 
 module Tryhttp
-  # Your code goes here...
 end
