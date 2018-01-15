@@ -20,7 +20,40 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First of all, you can start with understanding how TCP works.
+Tryhttp provides APIs to open TCP server and TCP client.
+
+To start TCP server, you can write the code below.
+
+```
+require 'tryhttp'
+
+server = Tryhttp::TcpServer.new(20000)
+server.open
+server.accept
+server.wait_for_receive { |data| p data }
+```
+
+Then, save the code above (e.g. main.rb) and run.
+
+```
+$ ruby main.rb
+```
+
+Now, you can connect to the server with port 20000.
+Open another terminal and type the command below to connect to the server.
+
+```
+$ nc localhost 20000
+```
+
+You can type anything you like. You can see server outputs what you type on the client window.
+
+You may feel the server code is verbose as you CANNOT open the server with a single method.
+
+However, it would be great help to understand state and lifecycle of TCP connection (such in `open`, `listen`, `accept`, etc).
+
+Because Tryhttp is NOT for practical use but for learning __how HTTP is working__, the API is designed to make user understand how HTTP, based on TCP, is working step by step.
 
 ## Development
 
