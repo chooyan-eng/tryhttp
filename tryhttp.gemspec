@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "tryhttp"
   spec.version       = Tryhttp::VERSION
   spec.authors       = ["chooyan-eng"]
-  spec.email         = ["chooyan.enginner@gmail.com"]
+  spec.email         = ["chooyan.engineer@gmail.com"]
 
   spec.summary       = 'TryHttp is a HTTP client / server gem, which supports to understand how HTTP works.'
   spec.description   = 'TryHttp is a HTTP client / server gem, which supports to understand how HTTP works.'
